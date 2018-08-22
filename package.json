@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "node_modules\\.bin\\eslint src/*.js",
+    "prepush":"npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Nayton",
@@ -13,6 +14,7 @@
   "devDependencies": {
     "eslint": "^5.4.0",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.14.0"
+    "eslint-plugin-import": "^2.14.0",
+    "husky": "^0.14.3"
   }
 }
