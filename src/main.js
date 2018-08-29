@@ -1,17 +1,17 @@
 module.exports = {
-    soma: function () {
+  soma: function () {
 
-    },
-    
-    subtracao: function () {
+  },
 
-    },
+  subtracao: function () {
 
-    divisao: function () {
+  },
 
-    },
+  divisao: function () {
 
-    multiplicacao: function () {
+  },
 
-    }
+  multiplicacao: function () {
+
+  },
 }
