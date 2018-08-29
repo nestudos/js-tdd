@@ -1,8 +1,8 @@
-const soma = (num1, num2) => num1 + num2;
-const subtracao = (num1, num2) => num1 - num2;
-const divisao = (num1, num2) => (num2 === 0 ? 'Não é possível dividir por 0' : num1 / num2);
-const multiplicacao = (num1, num2) => num1 * num2;
+const FizzBuzz = (num) => {
+  if(num % 3 === 0 && num % 5 === 0) return "FizzBuzz";
+  if(num % 3 === 0) return "Fizz";
+  if(num % 5 === 0) return "Buzz";
 
-export {
-  soma, subtracao, divisao, multiplicacao,
-};
+  return num;
+}
+export default FizzBuzz;
