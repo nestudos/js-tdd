@@ -1,39 +1,36 @@
-describe('Main', function () {
+var expect = require('chai').expect;
+var calc = require('../src/main.js');
+describe('Calc', function () {
 
-    var arr;
-    //Roda uma vez antes do teste
-    before(function () {
-        //iniciar uma conexão com o banco de dados.
-        //criar um conjunto de dados
+    //Smoke tests
+    describe('Smoke tests', function () {
+        
+        it('deve existir a biblioteca calculadora', function(){
+            expect(calc).to.exist;
+        });
+
+        it('deve existir o método "soma"', function(){
+            expect(calc.soma).to.exist;
+            expect(calc.soma).to.be.a.funtion;
+
+        });
+
+        it('deve existir o método "subtracao"', function(){
+            expect(calc.subtracao).to.exist;
+            expect(calc.subtracao).to.be.a.funtion;
+
+        });
+
+        it('deve existir o método "divisao"', function(){
+            expect(calc.divisao).to.exist;
+            expect(calc.divisao).to.be.a.funtion;
+
+        });
+
+        it('deve existir o método "multiplicacao"', function(){
+            expect(calc.multiplicacao).to.exist;
+            expect(calc.multiplicacao).to.be.a.funtion;
+
+        });
     });
-
-    //Roda uma vez depois do teste
-    after(function () {
-        //fecha conexão com o banco de dados.
-        //apaga um conjunto de dados.
-    });
-
-    //Roda todas as vezes, antes de CADA bloco
-    beforeEach(function () {
-        arr = [1,2,3]
-    });
-
-    //Roda todas as vezes, depois de CADAS bloco
-    afterEach(function () {
-
-    });
-
-    it('deve ter o tamanho de 4 quando adicionar um valor no array', function () {
-        arr.push(4);
-        console.log(arr.length) //4 
-    });
-
-    it('deve ter o tamanho de 2 quando excluir um valor do array', function () {
-        arr.pop();
-        console.log(arr.length) //2
-    });
-
-    it('deve ter o valor 3 quando usar o pop no array', function () {
-        console.log(arr.pop() === 3) //true
-    });
-})
+});
