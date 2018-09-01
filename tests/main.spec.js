@@ -21,4 +21,8 @@ describe('Main', () => {
   it('Deve retornar um número quando não for multiplo.', () => {
     expect(FizzBuzz(7)).to.be.equal(7);
   });
+
+  it('Deve retornar 0 quando receber 0.', () => {
+    expect(FizzBuzz(0)).to.be.equal(0);
+  });
 });
